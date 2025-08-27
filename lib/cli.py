@@ -1,5 +1,12 @@
+import sys
+import os
+
+# Add the project's root directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
 from lib.db.models import Event, Attendee
 from lib.db.database import session
+from lib.db.database import create_tables
 from lib.helpers import create_event_record, create_attendee_record, find_by_id, delete_record
 
 def display_events():
@@ -124,4 +131,5 @@ def main_menu():
             print("Invalid choice. Please try again.")
 
 if __name__ == '__main__':
+    create_tables()
     main_menu()
