@@ -43,7 +43,7 @@ def manage_events_menu():
         print("5. Delete an event")
         print("6. Back to main menu")
         choice = input("Enter your choice: ")
-        
+
         if choice == '1':
             name = input("Enter event name: ")
             date = input("Enter event date (e.g., YYYY-MM-DD): ")
@@ -89,7 +89,7 @@ def manage_attendees_menu():
         print("4. Delete an attendee")
         print("5. Back to main menu")
         choice = input("Enter your choice: ")
-        
+
         if choice == '1':
             name = input("Enter attendee name: ")
             email = input("Enter attendee email: ")
@@ -118,7 +118,7 @@ def main_menu():
         print("2. Manage Attendees")
         print("3. Exit")
         choice = input("Enter your choice: ")
-        
+
         if choice == '1':
             manage_events_menu()
         elif choice == '2':
